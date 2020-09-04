@@ -6,37 +6,13 @@
     android:layout_height="match_parent"
     android:padding="30dp">
 
-
-    <com.google.android.material.textfield.TextInputLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true">
+        android:layout_height="200dp"
+        android:padding="30dp"
+        android:src="@drawable/login_drawable"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Full Name"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20sp"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="User Name"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp"/>
-    </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +26,8 @@
             android:ems="10"
             android:inputType="text"
             android:textSize="20sp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:id="@+id/email_edit_txt"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -66,7 +43,8 @@
             android:layout_marginTop="5dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:id="@+id/pass_edit_txt"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -82,32 +60,11 @@
             android:ems="10"
             android:layout_marginTop="5dp"
             android:inputType="textPassword"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:id="@+id/confirm_pass_edit_txt"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <RadioGroup
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textSize="20sp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:layout_marginLeft="10dp"
-            android:textSize="20sp"/>
-        <RadioButton
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:textSize="20sp"/>
-    </RadioGroup>
     <Button
+        android:id="@+id/btn_Register"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

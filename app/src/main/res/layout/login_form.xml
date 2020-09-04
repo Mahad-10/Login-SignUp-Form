@@ -19,6 +19,7 @@
         android:focusableInTouchMode="true">
 
         <EditText
+            android:id="@+id/email_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -35,6 +36,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
+            android:id="@+id/pass_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -47,6 +49,7 @@
 
 
     <Button
+        android:id="@+id/btn_login"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +64,5 @@
         android:text="Register"
         android:textSize="20sp"
         android:background="@drawable/button_rounded"/>
-
-
 
 </LinearLayout>
